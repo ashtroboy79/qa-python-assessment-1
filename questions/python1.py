@@ -122,7 +122,13 @@ def three(input):
 
 
 def four(input):
-    return False
+    if "cie" in input:
+        return False
+    elif "cei" in input:
+        return True
+    elif "ei" in input:
+        return False
+    return True
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 5>
@@ -227,6 +233,8 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
+    # list = arg1.split()
+    
 	return 0
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
