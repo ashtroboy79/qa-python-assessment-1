@@ -36,6 +36,7 @@
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 from curses.ascii import NUL
+from hashlib import new
 
 
 def one(input1, input2):
@@ -304,6 +305,12 @@ def nine(input):
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def ten(input):
-	return []
+    input = input.split(',')
+    newlist = []
+    for i in range(len(input)):
+        if input[i] =="False":
+            if input[i-2] not in newlist:
+                newlist.append(input[i-2])
+    return newlist
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
