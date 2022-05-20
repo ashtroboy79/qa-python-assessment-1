@@ -35,6 +35,9 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
+from curses.ascii import NUL
+
+
 def one(input1, input2):
     if len(input1) > len(input2):
         return input1
@@ -119,12 +122,7 @@ def three(input):
 
 
 def four(input):
-    # list = ["cei", "ie"]
-    # for item in list:
-    #     if item in input:
-    #         return True
     return False
-
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 5>
@@ -171,7 +169,11 @@ def five(input):
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
 def six(string, int, char):
-	return False
+    if int > len(string):
+        return False
+    if string[int-1].lower() == char:
+        return True
+    return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
