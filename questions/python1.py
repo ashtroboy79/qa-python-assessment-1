@@ -91,7 +91,12 @@ def two(arg1):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def three(input):
-    return 0
+    no_of_vowels = 0
+    input = input.lower()
+    for letter in input:
+        if letter == "a" or letter == "e" or letter == "i" or letter =="o" or letter =="u":
+            no_of_vowels += 1
+    return no_of_vowels
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
