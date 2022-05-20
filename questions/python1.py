@@ -233,9 +233,16 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-    # list = arg1.split()
-    
-	return 0
+    sum = 0
+    res = 0
+    list = arg1.split()
+    for numbers in list:
+        for nums in numbers:
+            sum = sum + int(nums)
+        if sum > res:
+            res = sum
+        sum = 0
+    return res
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
