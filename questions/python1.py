@@ -269,7 +269,12 @@ def eight(arg1):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
-	return ""
+    input = input.lower()
+    var1 = input.find("bert")
+    var2 = input.find("bert",var1+4)
+    if var1 != -1 and var2 != -1:
+        return input[var1+4:var2]
+    return ""
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
