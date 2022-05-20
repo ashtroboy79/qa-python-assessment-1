@@ -119,6 +119,10 @@ def three(input):
 
 
 def four(input):
+    # list = ["cei", "ie"]
+    # for item in list:
+    #     if item in input:
+    #         return True
     return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
@@ -139,7 +143,13 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+    prod = 0
+    for i in range(input+1):
+        if i == 0:
+            prod = 1
+        else:
+            prod = prod * i
+    return prod
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
